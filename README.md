@@ -1,4 +1,4 @@
-<h1 align="right">Sudoku Solver</h1><br>
+<h1 align="right">WIP: Sudoku Solver</h1><br>
 
 Helpful tool for solving Sudoku problems.
 
