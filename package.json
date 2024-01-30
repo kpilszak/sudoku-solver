@@ -1,0 +1,27 @@
+{
+  "name": "sudoku-solver",
+  "version": "1.0.0",
+  "description": "<h1 align=\"right\">WIP: Sudoku Solver</h1><br>",
+  "main": "index.js",
+  "scripts": {
+    "start:backend": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpilszak/sudoku-solver.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kpilszak/sudoku-solver/issues"
+  },
+  "homepage": "https://github.com/kpilszak/sudoku-solver#readme",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3"
+  }
+}

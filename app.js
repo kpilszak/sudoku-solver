@@ -1,7 +1,8 @@
 const puzzleBoard = document.querySelector('#puzzle')
 const solveButton = document.querySelector('#solve-button')
+const explainerDisplay = document.querySelector('#explainer')
 const squares = 81
-const submission = []
+let submission = []
 
 for (let i = 0; i < squares; i++) {
     const inputElement = document.createElement('input')
@@ -23,4 +24,37 @@ const joinValues = () => {
     })
 }
 
-solveButton.addEventListener('click', joinValues)
+const populateValues = (isSolvable, solution) => {
+    const inputs = document.querySelectorAll('input')
+    if (isSolvable && solution) {
+        inputs.forEach((input, i) => {
+            input.value = solution[i]
+        })
+        explainerDisplay.innerHTML = 'This is the answer'
+    } else {
+        explainerDisplay.innerHTML = 'This is not solvable'
+    }
+}
+
+const solve = () => {
+    joinValues()
+    const data = { numbers: submission.join('') }
+    fetch('http://localhost:8000/solve', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+        },
+        body: JSON.stringify(data)
+    })  .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data)
+            populateValues(data.solvable, data.solution)
+            submission = []
+        })
+        .catch((error) => {
+            console.log('Error:', error)
+        })
+}
+
+solveButton.addEventListener('click', solve)
