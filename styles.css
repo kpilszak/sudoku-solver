@@ -10,3 +10,7 @@
     border-spacing: 0;
     border: 1px grey solid;
 }
+
+.odd-section {
+    background: lightgrey;
+}
