@@ -1,4 +1,4 @@
-<h1 align="right">WIP: Sudoku Solver</h1><br>
+<h1 align="right">Sudoku Solver</h1><br>
 
 Helpful tool for solving Sudoku problems.
 
@@ -19,7 +19,7 @@ Project is created with:
 * CSS3  
 
 ## Setup
-To run this project, open this in a new tab: <a href="https://kpilszak.github.io/sudoku-solver/">https://kpilszak.github.io/sudoku-solver/</a>
+To run frontend part of this project, open this in a new tab: <a href="https://kpilszak.github.io/sudoku-solver/">https://kpilszak.github.io/sudoku-solver/</a>
 
 ## Sources
 This project has been created with help from Ania Kubów tutorial <a href="https://www.youtube.com/watch?v=WDwhJNbWka0">5 API Projects in 5 hours 💥
