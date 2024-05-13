@@ -14,3 +14,16 @@
 .odd-section {
     background: lightgrey;
 }
+
+#solve-button {
+    background-color: coral;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+#solve-button:hover {
+    background-color: #c96f4c;
+}
